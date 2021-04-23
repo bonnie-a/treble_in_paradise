@@ -1,0 +1,223 @@
+--
+-- Populate tables
+--
+
+INSERT INTO genres (genre) VALUES
+('classical'), 
+('pop'),
+('folk'),
+('rap'),
+('country'),
+('rock'),
+('r&b'),
+('indie'),
+('alternative'),
+('metal')
+;
+
+INSERT INTO Bands (band_name, genre_id) VALUES
+('Hozier', 3), 
+('Frank Ocean', 7),
+('Migos', 4),
+('ACDC', 10),
+('Portugal. The Man', 8),
+('Ramones', 6),
+('Ludovico Einaudi', 1),
+('Glass Animals', 2),
+('Chris Stapleton', 5),
+('Amber Run', 9)
+;
+
+INSERT INTO Artists (fname, lname, band_id) VALUES
+('Andrew', 'Hozier-Byrne', 1), 
+('Christopher', 'Breaux', 2),
+('Quavo', 'Marshall', 3),
+('Offset', 'Cephus', 3),
+('Takeoff', 'Ball', 3),
+('Ludovico', 'Einaudi', 7),
+('Chris', 'Stapleton', 9),
+('Joshua', 'Keogh', 10),
+('Tom', 'Sperring', 10),
+('Henry', 'Wyeth', 10),
+('Dave', 'Bayley', 8),
+('Joe', 'Seaward', 8),
+('Ed','Irwin-Singer ', 8),
+('Drew', 'MacFarlane', 8),
+('Angus', 'Young', 4),
+('Phil', 'Rudd', 4),
+('Cliff', 'Williams', 4),
+('Brian', 'Johnson', 4),
+('Stevie', 'Young', 4),
+('John', 'Gourley', 5),
+('Zach', 'Carothers', 5),
+('Kyle', 'O\'Quin', 5),
+('Jason', 'Sechrist', 5),
+('Eric', 'Howk', 5),
+('Jeffrey', 'Hyman', 6),
+('John', 'Cummings', 6),
+('Douglas', 'Colvin', 6),
+('Thomas', 'Erdelyi', 6)
+;
+
+INSERT INTO Users (username) VALUES
+('Winter'), 
+('Moriah'),
+('Gabby'),
+('Zach'),
+('Mak'),
+('Linden'),
+('Paul'),
+('Maureen'),
+('Heather'),
+('Dan')
+;
+
+INSERT INTO Albums (album_title, band_id) VALUES
+('Wasteland, Baby!', 1), 
+('How To Be A Human Being', 8),
+('The Assembly', 10),
+('Traveller', 9),
+('Evil Friends', 5),
+('Nina Cried Power', 1),
+('Moon River', 2),
+('Back In Black', 4),
+('Culture', 3),
+('The Dawn', 7)
+;
+
+INSERT INTO Playlists (playlist_title, user_id) VALUES
+('Study Time', 1), 
+('Workout', 2),
+('One Dopamine Plz', 2),
+('Weather Is Changing', 7),
+('Driving', 5),
+('Chill Vibes', 10),
+('Random', 9),
+('Jogging', 6),
+('Songs to Cook To', 8),
+('Late Night', 3)
+;
+
+
+-- 
+-- Insert Songs (by album)
+-- 
+
+INSERT INTO Songs (title, band_id, album_id) VALUES
+('Nina Cried Power', 1, 1), 
+('Almost (Sweet Music)', 1, 1), 
+('Movement', 1, 1), 
+('No Plan', 1, 1), 
+('Nobody', 1, 1), 
+('To Noise Making (Sing)', 1, 1), 
+('As It Was', 1, 1), 
+('Shrike', 1, 1), 
+('Talk', 1, 1), 
+('Be', 1, 1), 
+('Dinner and Diatribes', 1, 1), 
+('Would That I', 1, 1), 
+('Sunlight', 1, 1), 
+('Wasteland, Baby!', 1, 1)
+;
+
+INSERT INTO Songs (title, band_id, album_id) VALUES
+('Life Itself', 8, 2), 
+('Youth', 8, 2), 
+('Season 2 Episode 3', 8, 2), 
+('Pork Soda', 8, 2), 
+('Mama\'s Gun', 8, 2), 
+('Cane Shuga', 8, 2), 
+('[Premade Sandwiches]', 8, 2),  
+('The Other Side of Paradise', 8, 2), 
+('Take A Slice', 8, 2), 
+('Poplar St', 8, 2), 
+('Agnes', 8, 2)
+;
+
+INSERT INTO Songs (title, band_id, album_id) VALUES
+('The Weight', 10, 3), 
+('Heaven is a Place', 10, 3), 
+('Amen', 10, 3), 
+('Amen (feat. London Choir)', 10, 3)
+;
+
+INSERT INTO Songs (title, band_id, album_id) VALUES
+('Traveller', 9, 4),
+('Fire Away', 9, 4),
+('Tennessee Whiskey', 9, 4),
+('Parachute', 9, 4),
+('Whiskey and You', 9, 4),
+('Nobody To Blame', 9, 4),
+('More of You', 9, 4),
+('When the Stars Come Out', 9, 4),
+('Daddy Doesn\'t Pray Anymore', 9, 4),
+('Might As Well Get Stoned', 9, 4),
+('Was It 26', 9, 4),
+('The Devil Named Music', 9, 4),
+('Outlaw State of Mind', 9, 4),
+('Sometimes I Cry', 9, 4)
+;
+
+INSERT INTO Songs (title, band_id, album_id) VALUES
+('Plastic Soldiers', 5, 5), 
+('Creep in a T-Shirt', 5, 5), 
+('Evil Friends', 5, 5), 
+('Modern Jesus', 5, 5), 
+('Hip Hop Kids', 5, 5), 
+('Atomic Man', 5, 5), 
+('Sea of Air', 5, 5), 
+('Waves', 5, 5), 
+('Holy Roller (Hallelujah)', 5, 5), 
+('Someday Believers', 5, 5), 
+('Purple Yellow Red and Blue', 5, 5), 
+('Smile', 5, 5)
+;
+
+INSERT INTO Songs (title, band_id, album_id) VALUES
+('Nina Cried Power', 1, 6), 
+('NFWMB', 1, 6), 
+('Moment\'s Silence (Common Tongue)', 1, 6),  
+('Shrike', 1, 6)
+;
+
+INSERT INTO Songs (title, band_id, album_id) VALUES
+('Moon River', 2, 7)
+;
+
+INSERT INTO Songs (title, band_id, album_id) VALUES
+('Hells Bells', 4, 8), 
+('Shoot To Thrill', 4, 8), 
+('What Do You Do for Money, Honey?', 4, 8), 
+('Givin the Dog a Bone', 4, 8), 
+('Let Me Put My Love Into You', 4, 8), 
+('Back In Black', 4, 8), 
+('You Shook Me All Night Long', 4, 8), 
+('Have a Drink on Me', 4, 8), 
+('Shake a Leg', 4, 8), 
+('Rock and Roll Ain\'t Noise Pollution', 4, 8)
+;
+
+INSERT INTO Songs (title, band_id, album_id) VALUES
+('Culture', 3, 9), 
+('T-Shirt', 3, 9), 
+('Call Casting', 3, 9), 
+('Bad and Boujee', 3, 9), 
+('Get Right Witcha', 3, 9), 
+('Slippery', 3, 9), 
+('Big on Big', 3, 9), 
+('What the Price', 3, 9), 
+('Brown Paper Bag', 3, 9), 
+('Deadz', 3, 9), 
+('All Ass', 3, 9), 
+('Kelly Price', 3, 9), 
+('Out Yo Way', 3, 9)
+;
+
+INSERT INTO Songs (title, band_id, album_id) VALUES
+('Fly', 7, 10), 
+('I Giorni', 7, 10), 
+('I Due Fiumi', 7, 10), 
+('Le Onde', 7, 10), 
+('Seven Days Walking', 7, 10), 
+('Fairytale', 7, 10)
+;
